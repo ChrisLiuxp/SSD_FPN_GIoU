@@ -11,7 +11,7 @@ COLORS = ((255, 0, 0, 128), (0, 255, 0, 128), (0, 0, 255, 128),
 #crcak (104, 117, 123)
 # SSD300 CONFIGS
 train_config = {
-    'loss_c':"CrossEntropy", #CrossEntropy,FocalLoss
+    'loss_c':"FocalLoss", #CrossEntropy,FocalLoss
     'loss_r':"Giou",  #SmoothL1,Giou
 }
 

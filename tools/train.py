@@ -191,7 +191,7 @@ def train():
                     update_vis_plot(viz,iteration, loss_l.item(), loss_c.item(),
                                 iter_plot, epoch_plot, 'append')
 
-        if epoch % 10 == 0 and epoch > 60:#epoch>1000 and epoch % 50 == 0:
+        if epoch >= 500 and epoch % 500 == 0:#epoch % 10 == 0 and epoch > 60:
             print('Saving state, iter:', iteration)
             save_folder = args.work_dir+cfg['work_name']
             if not os.path.exists(save_folder):
